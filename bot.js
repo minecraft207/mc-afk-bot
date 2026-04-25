@@ -1,7 +1,7 @@
 const mineflayer = require('mineflayer');
 
 const HOST = 'LowEndV1.aternos.me'; // ← Change this!
-const PORT = 36541;
+const PORT = 36451;
 const USERNAME = 'Billu_bhai';
 const VERSION = '26.1.2 (22)'; // ← Change to your version!
 
