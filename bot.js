@@ -2,8 +2,8 @@ const mineflayer = require('mineflayer');
 
 const HOST = 'LowEndV1.aternos.me';
 const PORT = 36451;
-const USERNAME= 'AFKBOT'
-const VERSION = '1.21.2';← Change to your version!
+const USERNAME = 'AFKBot';
+const VERSION = '1.21.2';
 
 function createBot() {
   const bot = mineflayer.createBot({
@@ -15,7 +15,7 @@ function createBot() {
   });
 
   bot.on('spawn', () => {
-    console.log('✅ Bot is online!');
+    console.log('Bot is online!');
     setInterval(() => {
       const yaw = Math.random() * Math.PI * 2;
       bot.look(yaw, 0, true);
@@ -29,17 +29,17 @@ function createBot() {
   });
 
   bot.on('kicked', (reason) => {
-    console.log('⚠️ Kicked:', reason);
+    console.log('Kicked:', reason);
     setTimeout(createBot, 6000);
   });
 
   bot.on('error', (err) => {
-    console.log('❌ Error:', err.message);
+    console.log('Error:', err.message);
     setTimeout(createBot, 6000);
   });
 
   bot.on('end', () => {
-    console.log('🔄 Reconnecting...');
+    console.log('Reconnecting...');
     setTimeout(createBot, 6000);
   });
 }
