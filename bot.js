@@ -3,7 +3,7 @@ const mineflayer = require('mineflayer');
 const HOST = 'LowEndV1.aternos.me'; // ← Change this!
 const PORT = 36541;
 const USERNAME = 'Billu_bhai';
-const VERSION = '1.21.1'; // ← Change to your version!
+const VERSION = '26.1.2 (22)'; // ← Change to your version!
 
 function createBot() {
   const bot = mineflayer.createBot({
